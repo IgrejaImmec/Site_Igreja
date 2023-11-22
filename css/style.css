@@ -472,6 +472,9 @@ a:focus {
   width: 100%;
 }
 
+.about_section .img-box video {
+  width: 100%;
+}
 .about_section .detail-box p {
   margin-top: 15px;
 }
