@@ -4,6 +4,17 @@
     justify-content: center;
     margin-top: 45px;
   }
+     .go-top {
+       width: 2.5rem;
+       height: 2.5rem;
+       /* Adapte o posicionamento ou estilo conforme necessário */
+     }
+ .video {
+   width: 90%;
+   /* Utilize unidades de medida, por exemplo, % ou px */
+   height: auto;
+   /* Ou defina a altura conforme necessário */
+ }
 }
 
 
@@ -14,7 +25,16 @@
   .hero_area {
     min-height: auto;
   }
-
+     .go-top {
+       width: 2rem;
+       height: 2rem;
+     }
+                    .video {
+                      width: 90%;
+                      /* Utilize unidades de medida, por exemplo, % ou px */
+                      height: auto;
+                      /* Ou defina a altura conforme necessário */
+                    }
   .slider_section .detail-box {
     margin-bottom: 45px;
   }
@@ -50,13 +70,24 @@
     margin: 0;
     font-size: 14px;
   }
+         .video {
+           width: 90%;
+           /* Utilize unidades de medida, por exemplo, % ou px */
+           height: auto;
+           /* Ou defina a altura conforme necessário */
+         }
 }
 
 @media (max-width: 480px) {
   .search_form .form-control {
     width: calc(100% - 30px);
   }
-
+ .video {
+   width: 90%;
+   /* Utilize unidades de medida, por exemplo, % ou px */
+   height: auto;
+   
+ }
   .client_section .box .client_id {
     flex-direction: column;
   }

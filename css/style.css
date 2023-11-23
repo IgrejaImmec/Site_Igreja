@@ -1,3 +1,33 @@
+*{/*rolagem suave*/
+  scroll-behavior: smooth;
+}
+
+/*Botão para direcionamento*/
+.go-top {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 1rem;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  z-index: 1100;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.go-top::before {
+  content: '\2191';
+  /* Código unicode para a seta para cima */
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
@@ -849,7 +879,6 @@ a:focus {
   color: #fff;
   text-align: center;
 }
-
 /*Texto das imagens*/
 .titulo {
   width: 70%;

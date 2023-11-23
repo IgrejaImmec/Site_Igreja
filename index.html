@@ -46,7 +46,7 @@
 
 <body>
 
-  <div class="hero_area">
+  <div class="hero_area" >
     <!-- header section strats -->
     <header class="header_section">
       <div class="header_top">
@@ -91,26 +91,28 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
+                <!--
                 <li class="nav-item active">
                   <a class="nav-link pl-lg-0" href="index.html">Igreja <span class="sr-only">(current)</span></a>
                 </li>
+                -->
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Sobre</a>
+                  <a class="nav-link" href="#historia">Nossa História</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Células</a>
+                  <a class="nav-link" href="#celulas">Células</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">Ministérios</a>
+                  <a class="nav-link" href="#ministerios">Ministérios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="why.html">Eventos</a>
+                  <a class="nav-link" href="#eventos">Eventos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contato</a>
+                  <a class="nav-link" href="#contato">Contato</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Doação</a>
+                  <a class="nav-link" href="#rodape">Doação</a>
                 </li>
               </ul>
               <from class="search_form">
@@ -218,7 +220,7 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            <span>Ministérios</span>
+            <span id="ministerios">Ministérios</span>
           </h2>
           <p>
           </p>
@@ -236,7 +238,7 @@
                 <p>
                   Conheça nosso grupo jovem 
                 </p>
-                <a href="">
+                <a href="ministerio-youth.html">
                   Ver mais
                 </a>
               </div>
@@ -316,7 +318,7 @@
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
+              <h2 id="historia">
                 Nossa História
               </h2>
             </div>
@@ -333,8 +335,8 @@
         </div>
 
         <div class="col-md-6">
-          <video width="600" height="400" controls>
-            <source src="Video/video ok.mp4" type="video/mp4">
+          <video class="video" width="600" height="400" controls>
+            <source class="video"  src="Video/video ok.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -348,7 +350,7 @@
   <section class="why_us_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 id="celulas">
           Células
         </h2>
       </div>
@@ -456,6 +458,12 @@
   <!-- end why us section -->
 
 
+  <div class="heading_container heading_center">
+     <h2 id="eventos">
+      Eventos
+     </h2>
+  </div>
+  
 
   <div id="carousel2" class="carousel slide" data-ride="carousel">
   
@@ -535,7 +543,7 @@
 
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 id="contato">
           Entre em Contato
         </h2>
       </div>
@@ -575,7 +583,7 @@
 
 
   <!-- footer section -->
-  <footer class="footer_section">
+  <footer class="footer_section" id="rodape">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3 footer-col">
@@ -608,19 +616,19 @@
               Links
             </h4>
             <div class="footer_links">
-              <a class="active" href="index.html">
-                Sobre
+              <a class="active" href="#historia">
+                Nossa História
               </a>
-              <a class="" href="service.html">
+              <a class="" href="#celulas" >
                 Células
               </a>
-              <a class="" href="about.html">
+              <a class="" href="#ministerios">
                 Ministérios
               </a>
-              <a class="" href="why.html">
+              <a class="" href="#eventos">
                 Eventos
               </a>
-              <a class="" href="contact.html">
+              <a class="" href="#contato">
                 Contato
               </a>
             </div>
@@ -703,7 +711,7 @@
         </div>
       </div>
     </div>
-      
+      <div class="go-top"></div>
       </div>
     </div>
     <div class="footer-info">
@@ -729,6 +737,24 @@
   </script>
   <!-- End Google Map -->
 
+  <script>
+    $(document).ready(function () {
+      // esconde e mostra o btn
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 160) { // distancia que tem que rolar antes de aparecer
+          $('.go-top').fadeIn(250);
+        } else {
+          $('.go-top').fadeOut(250);
+        }
+      });
+      // manda pro topo
+      $('.go-top').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 1200);
+      });
+
+    });
+  </script>
 </body>
 
 </html>
