@@ -665,8 +665,9 @@ a:focus {
 #carousel,
 .carousel,
 .slide {
-  width: 100%;
-  max-width: 1080px;
+  width: 90%;
+  height: 20%;
+  max-width: 900px;
   position: relative;
   margin: 0 auto;
   margin-top: 2%;
