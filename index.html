@@ -40,8 +40,8 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/fomulario.js"></script>
 </head>
 
 <body>
@@ -300,7 +300,7 @@
 
         
         <div class="btn-box">
-          <a href="todosMinisterios.html">
+          <a href="">
             Ver Todos
           </a>
         
@@ -497,11 +497,11 @@
 
   <div class="heading_container heading_center">
      <h2 id="eventos">
-       Cultos Semanais
+       Cultos
      </h2>
   </div>
   <div class="heading_container heading_center">
-    <p>Culto de Oração,toda quinta - feira iniciando às 19:00 </p>
+    <p>Culto de Oração,toda Quinta - feira iniciando às 19:00 </p>
     <p>Culto de Adoração,todo Domingo iniciando às 19:00 </p>
     <p>EBD,todo Domingo iniciando às 9:00 </p>
   </div>
@@ -519,32 +519,34 @@
       <div class="row">
         <div class="col-md-9 mx-auto">
           <div class="form_container">
-            <form>
+            <form id="meuFormulario" method="post" enctype="multipart/form-data">
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Primeiro nome" />
+                  <input type="text" class="form-control" placeholder="Primeiro nome" id="primeiroNome" />
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Segundo nome" />
+                  <input type="text" class="form-control" placeholder="Segundo nome" id="segundoNome" />
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control" placeholder="Email" />
+                  <input type="email" class="form-control" placeholder="Email" id="email" />
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Telefone" />
+                  <input type="text" class="form-control" placeholder="Telefone" id="telefone" />
                 </div>
               </div>
-              <div class="form-group ">
-                <input type="text" class="message-box" placeholder="Mensagem" />
+              <div class="form-group">
+                <input type="text" class="message-box" placeholder="Mensagem" id="mensagem" />
               </div>
               <div class="btn-box">
-                <button type="submit">Enviar</button>
+                <!-- Alterado o tipo de botão para 'button' para evitar o envio padrão do formulário -->
+                <button type="submit" >Enviar</button>
               </div>
             </form>
           </div>
         </div>
+        <div id="mensagem-retorno"></div>
       </div>
     </div>
   </section>
@@ -723,6 +725,7 @@
       });
 
     });
+
   </script>
 </body>
 

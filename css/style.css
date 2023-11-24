@@ -658,7 +658,24 @@ a:focus {
 }
 
 
-/*Segundo caroussel*/
+/*Mensagem de retorno*/
+/*mensagem de retorno*/
+#mensagem-retorno {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#mensagem-retorno.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#mensagem-retorno.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
 
 /*Texto das imagens*/
 .titulo {
