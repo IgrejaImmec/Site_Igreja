@@ -63,6 +63,9 @@
   .about_section .img-box {
     margin-top: 45px;
   }
+    .duvidas__copy {
+      width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -76,7 +79,10 @@
            height: auto;
            /* Ou defina a altura conforme necessário */
          }
-}
+        .duvidas-titulo {
+          font-size: 1rem;
+        }
+        }
 
 @media (max-width: 480px) {
   .search_form .form-control {
