@@ -4,16 +4,31 @@
     justify-content: center;
     margin-top: 45px;
   }
+            .main-container {
+              width: 90%;
+              margin: 0 auto;
+            }
+                        .content {
+                          width: 90%;
+                          margin: 0 auto;
+                        }
+
+                            .titulo-evento{
+                              width:10px ;
+                            } 
+                                .data-evento {
+                                   margin-right: 20%;
+                                 }
      .go-top {
        width: 2.5rem;
        height: 2.5rem;
-       /* Adapte o posicionamento ou estilo conforme necessário */
+       
      }
  .video {
    width: 90%;
-   /* Utilize unidades de medida, por exemplo, % ou px */
+   
    height: auto;
-   /* Ou defina a altura conforme necessário */
+   
  }
 }
 
@@ -82,7 +97,7 @@
         .duvidas-titulo {
           font-size: 1rem;
         }
-        }
+   }
 
 @media (max-width: 480px) {
   .search_form .form-control {
