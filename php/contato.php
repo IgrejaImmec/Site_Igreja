@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'success' => true,
         'message' => 'Mensagem enviada!'
     );
-
     echo json_encode($response);
 }
 
@@ -35,12 +34,12 @@ function enviaEmail($primeiroNome, $segundoNome, $email, $telefone, $mensagem)
         $mail->isSMTP();
         $mail->Host = 'smtp.outlook.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'SuporteImmecChurch@outlook.com';
+        $mail->Username = 'SuporteImmecChurch2023@outlook.com';
         $mail->Password = 'SomosUmaIgrejaSaudavel';
         $mail->Port = 587;
 
-        $mail->setFrom('SuporteImmecChurch@outlook.com');
-        $mail->addAddress('immecChurch@gmail.com');
+        $mail->setFrom('SuporteImmecChurch2023@outlook.com');
+        $mail->addAddress('1923332049@uezo.edu.br');
 
         $mail->isHTML(true);
         $mail->Subject = 'Usuario Site';
