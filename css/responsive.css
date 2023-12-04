@@ -40,15 +40,23 @@
   .hero_area {
     min-height: auto;
   }
+    /*Container mapa*/
+  
+    .container-mapa {
+      width: 320px;
+      height: 250px;
+    }
+  
+    /**/
      .go-top {
        width: 2rem;
        height: 2rem;
      }
                     .video {
                       width: 90%;
-                      /* Utilize unidades de medida, por exemplo, % ou px */
+                     
                       height: auto;
-                      /* Ou defina a altura conforme necessário */
+                     
                     }
   .slider_section .detail-box {
     margin-bottom: 45px;
@@ -81,6 +89,14 @@
     .duvidas__copy {
       width: 100%;
     }
+        /*Container mapa*/
+    
+        .container-mapa {
+          width: 320px;
+          height: 250px;
+        }
+    
+        /**/
 }
 
 @media (max-width: 576px) {
@@ -89,14 +105,23 @@
     font-size: 14px;
   }
          .video {
+          margin-top: 10px;
            width: 90%;
-           /* Utilize unidades de medida, por exemplo, % ou px */
+           
            height: auto;
-           /* Ou defina a altura conforme necessário */
+           
          }
         .duvidas-titulo {
           font-size: 1rem;
         }
+                /*Container mapa*/
+        
+                .container-mapa {
+                  width: 320px;
+                  height: 250px;
+                }
+        
+                /**/
    }
 
 @media (max-width: 480px) {
@@ -104,8 +129,9 @@
     width: calc(100% - 30px);
   }
  .video {
-   width: 90%;
-   /* Utilize unidades de medida, por exemplo, % ou px */
+  margin-top: 10px; 
+  width: 90%;
+   
    height: auto;
    
  }
@@ -123,6 +149,14 @@
   .slider_section .detail-box h1 {
     font-size: 2rem;
   }
+    /*Container mapa*/
+  
+    .container-mapa {
+      width: 320px;
+      height: 250px;
+    }
+  
+    /**/
 }
 
 @media (max-width: 376px) {
@@ -130,6 +164,14 @@
     font-size: 26px;
     line-height: 1.5;
   }
+    /*Container mapa*/
+  
+    .container-mapa {
+      width: 320px;
+      height: 250px;
+    }
+  
+    /**/
 }
 
 
@@ -137,4 +179,12 @@
   .container {
     max-width: 1170px;
   }
+    /*Container mapa*/
+  
+    .container-mapa {
+      width: 320px;
+      height: 250px;
+    }
+  
+    /**/
 }

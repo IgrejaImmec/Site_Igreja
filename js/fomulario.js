@@ -1,7 +1,9 @@
 $(document).ready(function () {
     // Função para enviar os dados usando AJAX com promessas
     function enviarDados(formData) {
+       
         $('#mensagem-retorno').removeClass('success').addClass('error').text('Enviando...');
+       
         return new Promise(function (resolve, reject) {
             $.ajax({
                 url: "php/contato.php", // Corrija o caminho para o arquivo PHP, se necessário
@@ -21,6 +23,7 @@ $(document).ready(function () {
                     resolve(data); // Resolva a promessa com os dados retornados
                 },
                 error: function (xhr, status, error) {
+                    
                     // Exibe uma mensagem de erro caso a requisição falhe
                     $('#mensagem-retorno').removeClass('success').addClass('error').text('Ocorreu um erro: ' + error);
                     console.log(error);

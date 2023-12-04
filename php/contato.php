@@ -7,6 +7,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+ 
     $primeiroNome = filter_input(INPUT_POST, 'primeiroNome', FILTER_SANITIZE_STRING);
     $segundoNome = filter_input(INPUT_POST, 'segundoNome', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
@@ -45,6 +46,7 @@ function enviaEmail($primeiroNome, $segundoNome, $email, $telefone, $mensagem)
         $mail->Subject = 'Usuario Site';
         $mail->Body = '<h3>Oi, me chamo ' . $primeiroNome . ' ' . $segundoNome . '<h3>
         <br> ' . $mensagem . '<br>' . 'Meu email de contato ' . $email . '<br>Telefone: ' . $telefone . '<br>  :)';
+        
         $mail->AltBody = 'Chegou um Email';
 
         if ($mail->send()) {
