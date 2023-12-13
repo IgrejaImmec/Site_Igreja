@@ -39,7 +39,7 @@ function enviaEmail($primeiroNome, $segundoNome, $email, $telefone, $mensagem)
         $mail->Port = 587;
 
         $mail->setFrom('SuporteImmecChurch2023@outlook.com');
-        $mail->addAddress('1923333070@uezo.edu.br');
+        $mail->addAddress('immecchurch@gmail.com');
 
         $mail->isHTML(true);
         $mail->Subject = 'Usuario Visitante do Site';
