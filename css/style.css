@@ -55,7 +55,7 @@ body {
                               width:10px ;
                             } 
                                 .data-evento {
-                                   margin-right: 20%;
+                                   margin-right: 30%;
                                  }
      .go-top {
        width: 2.5rem;
@@ -942,14 +942,15 @@ a:focus {
 /*Linha do tempo de eventos*/
 .main-container {
   position: relative;
-  width: 500px;
+  width: 700px;
+  margin: 0 auto; /* Centraliza a timeline */
 }
 
 /*creating line for timeline*/
 .main-container::after {
   content: '';
   position: absolute;
-  width: 10px;
+  width:10px;
   background-color: #1414b8;
   top: 0;
   bottom: 0;
@@ -957,11 +958,31 @@ a:focus {
   margin-left: -3px;
 }
 
+
+
+.botaoFotosVideos {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+    width: auto; /* Ajuste automático do tamanho */
+   
+}
+
+
 /*Adjusting box of all content*/
 .text-wrapper {
   padding: 10px 40px;
   position: relative;
-  width: 51%;
+  width: 60%;
   box-sizing: border-box;
   margin: 50px 0;
 }
@@ -980,12 +1001,12 @@ a:focus {
 
 /*for left events*/
 .left {
-  left: 0;
+  right: 20%;
 }
 
 /*for right events*/
 .right {
-  left: 50%;
+  left: 46%;
 }
 
 .right::after {

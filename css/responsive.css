@@ -230,3 +230,36 @@
   
     /**/
 }
+
+
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .botaoFotosVideos {
+        width: 90%;  /* Ocupa a largura total */
+        padding: 12px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .botaoFotosVideos {
+        font-size: 13px;
+        padding: 10px;
+        width: 80%;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .botao-container {
+        flex-direction: column;
+        align-items: center; /* Alinha botões ao centro */
+        margin-right: 5px; 
+    }
+}
+
+
+
+
